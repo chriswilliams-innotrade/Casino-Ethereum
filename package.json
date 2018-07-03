@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Chris Williams",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -22,5 +22,13 @@
     "webpack": "^4.14.0"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chriswilliams-innotrade/Casino-Ethereum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chriswilliams-innotrade/Casino-Ethereum/issues"
+  },
+  "homepage": "https://github.com/chriswilliams-innotrade/Casino-Ethereum#readme",
   "description": ""
 }
