@@ -28,7 +28,7 @@ contract Casino {
         if (msg.sender == owner) selfdestruct(owner);
     }
 
-    function checkplayerExists(address player) public constant returns(bool){ 
+    function checkPlayerExists(address player) public constant returns(bool){ 
         for(uint256 i = 0; i < players.length; i++){
             if(players[i] == player) return true;
         }
@@ -38,7 +38,7 @@ contract Casino {
 
     // To bet for a number between 1 and 10 both inclusive 
     function bet(uint256 numberSelected) public payable { 
-        require(!checkplayerExists(msg.sender));
+        require(!checkPlayerExists(msg.sender));
         require(numberSelected >= 1 && numberSelected <= 10);
         require(msg.value >= minimumBet);
 
