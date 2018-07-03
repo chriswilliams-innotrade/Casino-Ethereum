@@ -1,5 +1,4 @@
 pragma solidity 0.4.20;
-
 contract Casino {
     address public owner;
     unit256 public minimumBet;
