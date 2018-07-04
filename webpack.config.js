@@ -2,7 +2,7 @@
 
 const path = require('path')
 
-module.exports - {
+module.exports = {
     entry: path.join(__dirname, 'src/js', 'index.js'), // Our frontend will be inside the src folder
     output: {
         path: path.join(__dirname, 'dist'),
@@ -14,7 +14,7 @@ module.exports - {
             use: ['style-loader', 'css-laoder'],
             include: /src/
         }, {
-            test: /\.jsx$/, // To load the js an jsx files
+            test: /\.jsx?$/, // To load the js an jsx files
             loader: 'babel-loader',
             exclude: /node_modules/,
             query: {
