@@ -23,7 +23,6 @@ contract Casino {
         if(_minimumBet != 0 ) minimumBet = _minimumBet;
     }
  
-
     function kill() public {
         if (msg.sender == owner) selfdestruct(owner);
     }
