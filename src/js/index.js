@@ -234,7 +234,7 @@ class App extends React.Component {
         }
 
         updateState(){
-            this.state.ConstractInstance.minimumBet((err, result) => {
+            this.state.ContractInstance.minimumBet((err, result) => {
                 if(result != null){
                     this.setState({
                         minimumBet: parseFloat(web3.fromWei(result, 'ether'))
@@ -256,7 +256,7 @@ class App extends React.Component {
                 })
             }
         })
-        this.state.ContractInstance.maxAmountOFBets((err, result) => {
+        this.state.ContractInstance.maxAmountOfBets((err, result) => {
             if(result != null){
                 this.setState({
                     maxAmountOfBets: parseInt(result)
